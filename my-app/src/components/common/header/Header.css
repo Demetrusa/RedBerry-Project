@@ -23,4 +23,14 @@ h1 {
   background: #fe3b1f;
   font-size: 24px;
   line-height: 29.26px;
+  margin-top: 175px;
+}
+.submitted-application {
+  margin-top: 41px;
+}
+.submitted-application > a {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 29.26px;
+  font-weight: 400;
 }

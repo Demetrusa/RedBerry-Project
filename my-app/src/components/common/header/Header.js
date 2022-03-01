@@ -10,6 +10,12 @@ function Header (){
             <div className="startButton">
                 <button>Start Questionnaire</button>
             </div>
+            <div className="submitted-application">
+                <a href="">Submitted Applications</a>
+            </div>
+            <div id="rocketman">
+                <img src="../../rocketman.vsg" alt="rocketmanSVG" />
+            </div>
          </div>
      )
  }
