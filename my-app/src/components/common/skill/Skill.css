@@ -1,0 +1,27 @@
+.skill {
+  display: flex;
+}
+
+.abouTSkill {
+  background-color: #ffff;
+  width: 50%;
+}
+
+.AboutRedberry {
+  width: 50%;
+  background: radial-gradient(50% 50% at 50% 50%, #0c0d0e 0%, #151718 73.44%);
+}
+.aboutreadberry-heading > h2 {
+  color: rgba(254, 59, 31, 1);
+  font-size: 64px;
+  line-height: 79px;
+  margin-top: 72px;
+}
+.AboutTextContent > p {
+  font-size: 24px;
+  line-height: 200%;
+  letter-spacing: 0.05em;
+  margin: 240px 126px 234px 176px;
+  color: #ffffff;
+  text-align: start;
+}
