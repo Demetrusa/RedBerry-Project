@@ -1,5 +1,7 @@
 import React from "react";
-import "./Header.css"
+import "./Header.css";
+import Rocket from "../../../images/rocketman.svg";
+
 
 function Header (){
      return (
@@ -14,7 +16,7 @@ function Header (){
                 <a href="">Submitted Applications</a>
             </div>
             <div id="rocketman">
-                <img src="#" alt="rocketmanSVG" className="rocketImg"/>
+                <img src={Rocket} alt="rocketmanSVG" className="rocketImg"/>
             </div>
          </div>
      )
