@@ -9,10 +9,10 @@ function Origin () {
                     <h2>Hey, Rocketeer, what are your coordinates?</h2>
                 </div>
                 <div className="firstForm">
-                    <input type="text" name="firstName" id="firstName" placeholder="First Name"/><br />
-                    <input type="text" name="lastName" id="lastName" placeholder="Last Name"/><br />
-                    <input type="text" name="email" id="email" placeholder="E mail" /><br />
-                    <input type="number"  name="number" id="mobileNumber" placeholder="+995 5_ _ _ _"/>
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name" minlength="2" required/><br />
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name"  minlength="2" required/><br />
+                    <input type="email" name="email" id="email" placeholder="E mail"  required /><br />
+                    <input type="tel"  name="phone" id="phone" placeholder="+995 5_ _ _ _" /> {/* pattern="[0-9]{3}-[0-9]{2}-[0-9]{3} */}
                 </div>
             </div>
             <div className="rightSide">
