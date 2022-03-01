@@ -1,0 +1,26 @@
+.homePage {
+  background-image: url("../../../images/stars.svg");
+  height: 100vh;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+}
+.heading {
+  margin-top: 175px;
+}
+h1 {
+  font-size: 96px;
+  color: #fe3b1f;
+}
+.startButton > button {
+  width: 395px;
+  height: 79px;
+  border-radius: 50px;
+  color: #ffffff;
+  background: #fe3b1f;
+  font-size: 24px;
+  line-height: 29.26px;
+}
