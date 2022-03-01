@@ -10,13 +10,13 @@
 .OriginPage {
   display: flex;
 }
-.Origin-heading h2 {
+.OriginHeading h2 {
   font-size: 64px;
   line-height: 79.49px;
   font-weight: 400;
   color: #fe3b1f;
 }
-.Origin-heading {
+.OriginHeading {
   width: 716px;
   margin: 105px 0 0 131px;
 }
