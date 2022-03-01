@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Origin.css"
 
 function Origin () {
+    const [value, setValue] = useState('');
+    console.log(value);
     return(
         <div className="OriginPage">
             <div className="leftSide">
@@ -9,10 +11,12 @@ function Origin () {
                     <h2>Hey, Rocketeer, what are your coordinates?</h2>
                 </div>
                 <div className="firstForm">
-                    <input type="text" name="firstName" id="firstName" placeholder="First Name" minlength="2" required/><br />
-                    <input type="text" name="lastName" id="lastName" placeholder="Last Name"  minlength="2" required/><br />
-                    <input type="email" name="email" id="email" placeholder="E mail"  required /><br />
-                    <input type="tel"  name="phone" id="phone" placeholder="+995 5_ _ _ _" />  {/*pattern="[+]{1}-[0-9]{3}-[0-9]{3}-[0-9]{6}"*/}
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name" minLength={2} required/><br />
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name"  minLength={2} required/><br />
+                    <input type="email" name="email" id="email" placeholder="E mail"  required /><br /> 
+                    <input type="tel"  name="phone" id="phone" placeholder="+995 5_ _ _ _"  value={`+995 ${value}`} onChange={(e)=>{ 
+                        setValue(e.target.value.slice(5,e.target.value.length))
+                    }} /> 
                 </div>
             </div>
             <div className="rightSide">
