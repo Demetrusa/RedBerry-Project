@@ -1,0 +1,12 @@
+.leftSide {
+  width: 50%;
+  height: 100vh;
+}
+.rightSide {
+  width: 50%;
+  background-color: #454545;
+  height: 100vh;
+}
+.OriginPage {
+  display: flex;
+}

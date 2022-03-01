@@ -14,7 +14,7 @@ function Header (){
                 <a href="">Submitted Applications</a>
             </div>
             <div id="rocketman">
-                <img src="../../rocketman.vsg" alt="rocketmanSVG" />
+                <img src="#" alt="rocketmanSVG" className="rocketImg"/>
             </div>
          </div>
      )
