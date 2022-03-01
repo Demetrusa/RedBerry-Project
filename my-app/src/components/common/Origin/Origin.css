@@ -4,7 +4,7 @@
 }
 .rightSide {
   width: 50%;
-  background-color: #454545;
+  background: radial-gradient(50% 50% at 50% 50%, #0c0d0e 0%, #151718 73.44%);
   height: 100vh;
 }
 .OriginPage {
@@ -19,4 +19,28 @@
 .OriginHeading {
   width: 716px;
   margin: 105px 0 0 131px;
+}
+.originHeadingTwo {
+  margin-top: 97px;
+  margin-left: 177px;
+}
+.originHeadingTwo h2 {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 79.49px;
+  color: #fe3b1f;
+  text-align: start;
+}
+.rightSideText {
+  width: 705px;
+  margin-left: 180px;
+}
+.rightSide p {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.05em;
+  text-align: start;
+  padding-top: 150px;
 }
