@@ -6,7 +6,13 @@ function Origin () {
         <div className="OriginPage">
             <div className="leftSide">
                 <div className="OriginHeading">
-                <h2>Hey, Rocketeer, what are your coordinates?</h2>
+                    <h2>Hey, Rocketeer, what are your coordinates?</h2>
+                </div>
+                <div className="firstForm">
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name"/><br />
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name"/><br />
+                    <input type="text" name="email" id="email" placeholder="E mail" /><br />
+                    <input type="number"  name="number" id="mobileNumber" placeholder="+995 5_ _ _ _"/>
                 </div>
             </div>
             <div className="rightSide">

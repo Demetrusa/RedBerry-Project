@@ -7,8 +7,8 @@ import Origin from './components/common/Origin/Origin';
 function App() {
   return (
     <div className="App">
-      <Header />
-      {/* <Origin /> */}
+      {/* <Header /> */}
+      <Origin />
     </div>
   );
 }

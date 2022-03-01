@@ -44,3 +44,12 @@
   text-align: start;
   padding-top: 150px;
 }
+.firstForm {
+  margin-top: 131px;
+}
+.firstForm > input {
+  width: 455px;
+  height: 54px;
+  padding: 17px 203px 13px 57px;
+  margin-bottom: 37px;
+}
