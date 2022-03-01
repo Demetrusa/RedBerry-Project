@@ -12,7 +12,7 @@ function Origin () {
                     <input type="text" name="firstName" id="firstName" placeholder="First Name" minlength="2" required/><br />
                     <input type="text" name="lastName" id="lastName" placeholder="Last Name"  minlength="2" required/><br />
                     <input type="email" name="email" id="email" placeholder="E mail"  required /><br />
-                    <input type="tel"  name="phone" id="phone" placeholder="+995 5_ _ _ _" pattern="[0-9]{4}-[0-9]{3}-[0-9]{6}" /> 
+                    <input type="tel"  name="phone" id="phone" placeholder="+995 5_ _ _ _" />  {/*pattern="[+]{1}-[0-9]{3}-[0-9]{3}-[0-9]{6}"*/}
                 </div>
             </div>
             <div className="rightSide">
