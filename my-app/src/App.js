@@ -12,8 +12,8 @@ import ThankYou from './components/common/submitPage/ThankYou';
 function App() {
   return (
     <div className="App">
-      <Header />
-      {/* <Origin /> */}
+      {/* <Header /> */}
+      <Origin />
       {/* <Skill /> */}
       {/* <Covid /> */}
       {/* <About /> */}
