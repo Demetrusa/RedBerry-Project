@@ -3,14 +3,16 @@ import "./Skill.css";
 
 function Skill () {
     const [skills, setSkill] = useState("");
-    const skillApi = () => {
-        fetch("https://bootcamp-2022.devtest.ge/api/skills")
-        .then((response) => response.json())
-        .then((data)=>{
-            setSkill(data.setup + " ... " + data.title)
+    const skill = fetch('https://bootcamp-2022.devtest.ge/api/skills');
+    skill.then(function (response){
+        let responseJSON = response.json();
+        responseJSON.then(function(title){
+            let object = title[0];
+            console.log(object);
+        }).catch(function(){
+            alert("error");
         });
-
-    }
+    })
     return (
         <div className="skill">
             <div className="abouTSkill">
@@ -18,17 +20,19 @@ function Skill () {
                     <h2>Tell us about your skills</h2>
                 </div>
                 <div className="skillForm">
-                <select name="custom-select" id="skillChange" placeholder="Skills" onClick={setSkill} >
-                    <option value="HTML">{skills}</option>
-                    <option value="CSS">{skills}</option>
-                    <option value="PHP">{skills}</option>
-                    <option value="Laravel">{skills}</option>
-                    <option value="React.JS">{skills}</option>
-                    <option value="Vue.JS">{skills}</option>
-                    <option value="Svelte">{skills}</option>
-                    <option value="Angular">{skills}</option>
-                </select>
+                <select name="custom-select" id="skillChange" placeholder="Skills">
+                    <option value="HTML"></option>
+                    <option value="CSS"></option>
+                    <option value="PHP"></option>
+                    <option value="Laravel"></option>
+                    <option value="React.JS"></option>
+                    <option value="Vue.JS"></option>
+                    <option value="Svelte"></option>
+                    <option value="Angular"></option>
+                </select><br />
+                <input type="date" id="experianceTime" name="experianceTime" />
                 </div>
+                
             </div>
             <div className="AboutRedberry">
                 <div className="aboutreadberry-heading">
