@@ -22,3 +22,23 @@
 #box4 {
   margin-bottom: 110px;
 }
+.radioBox > h2 {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 16px;
+}
+.covidHeading {
+  width: 788px;
+  height: 175px;
+  margin: 61px 74px 65px 51px;
+}
+.covidHeading h2 {
+  color: #fe3b1f;
+  font-size: 64px;
+  text-align: center;
+  padding: 61px 74px 65px 51px;
+}
+#home {
+  padding-bottom: 17px;
+  padding-top: 17px;
+}
