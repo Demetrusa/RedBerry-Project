@@ -27,3 +27,26 @@
   padding-top: 25px;
   padding-left: 20px;
 }
+.aboutHeading h2 {
+  font-size: 64px;
+  color: #fe3b1f;
+  margin: 43px 43px 127px 140px;
+}
+.aboutInput {
+  width: 645px;
+  height: 119px;
+  margin: 0 115px 45px 153px;
+}
+.aboutInput h2 {
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.aboutTextArea {
+  margin: 45px 115px 33px 153px;
+}
+.aboutTextArea h2 {
+  padding-bottom: 11px;
+  font-size: 18px;
+  line-height: 22px;
+}
