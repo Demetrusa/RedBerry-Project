@@ -32,9 +32,9 @@
 }
 .rightSideText {
   width: 705px;
-  margin-left: 180px;
+  margin: 3px 122px 279px 180px;
 }
-.rightSide p {
+.rightSideText p {
   color: #ffffff;
   font-size: 24px;
   font-weight: 400;

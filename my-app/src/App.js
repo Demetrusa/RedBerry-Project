@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import About from './components/common/about/About';
 import Covid from './components/common/covid/Covid';
 import Header from './components/common/header/Header';
 import Origin from './components/common/Origin/Origin';
@@ -10,9 +11,10 @@ function App() {
   return (
     <div className="App">
       {/* <Header /> */}
-      {/* <Origin /> */}
+      <Origin />
       {/* <Skill /> */}
-      <Covid />
+      {/* <Covid /> */}
+      {/* <About /> */}
     
     </div>
   );

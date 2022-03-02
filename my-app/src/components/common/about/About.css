@@ -1,0 +1,29 @@
+.aboutHeadingInputs {
+  text-align: start;
+}
+.about {
+  display: flex;
+}
+.aboutLeftBox {
+  width: 50%;
+}
+.aboutRightBox {
+  width: 50%;
+  background: radial-gradient(50% 50% at 50% 50%, #0c0d0e 0%, #151718 73.44%);
+}
+#devlak {
+  width: 535px;
+  height: 122px;
+  padding-top: 25px;
+  padding-left: 20px;
+  color: #3a3a3a;
+  border: 1px solid #525557;
+}
+#Special {
+  width: 535px;
+  height: 89px;
+  color: #3a3a3a;
+  border: 1px solid #525557;
+  padding-top: 25px;
+  padding-left: 20px;
+}
