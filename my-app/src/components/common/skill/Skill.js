@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import "./Skill.css";
 
 function Skill () {
-    const [skills, setSkill] = useState("");
+    const [object, setSkill] = useState("");
     const skill = fetch('https://bootcamp-2022.devtest.ge/api/skills');
     skill.then(function (response){
         let responseJSON = response.json();
         responseJSON.then(function(title){
-            let object = title[0];
+            let object = title[1];
             console.log(object);
         }).catch(function(){
             alert("error");
@@ -21,7 +21,7 @@ function Skill () {
                 </div>
                 <div className="skillForm">
                 <select name="custom-select" id="skillChange" placeholder="Skills">
-                    <option value="HTML"></option>
+                    <option value={object[1]}>{object[1]}</option>
                     <option value="CSS"></option>
                     <option value="PHP"></option>
                     <option value="Laravel"></option>
