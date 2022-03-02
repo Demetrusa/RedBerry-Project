@@ -4,7 +4,6 @@
 .rightSide {
   width: 50%;
   background: radial-gradient(50% 50% at 50% 50%, #0c0d0e 0%, #151718 73.44%);
-  height: 100vh;
 }
 .OriginPage {
   display: flex;
