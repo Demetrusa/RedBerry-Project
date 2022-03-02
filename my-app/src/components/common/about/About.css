@@ -50,3 +50,22 @@
   font-size: 18px;
   line-height: 22px;
 }
+.aboutRightBoxHeading h2 {
+  margin: 43px 109px 100px 198px;
+  color: #fe3b1f;
+  font-size: 64px;
+  line-height: 79px;
+  text-align: start;
+}
+.AboutRightBoxHeading {
+  width: 600px;
+  height: 606px;
+  margin: 0 104px 187px 198px;
+  color: #ffffff;
+  text-align: start;
+}
+.AboutRightBoxHeading p {
+  font-size: 24px;
+  line-height: 48px;
+  letter-spacing: 0.05rem;
+}
