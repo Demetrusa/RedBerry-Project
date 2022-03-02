@@ -18,6 +18,9 @@
   padding-left: 20px;
   color: #3a3a3a;
   border: 1px solid #525557;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
 }
 #Special {
   width: 535px;
@@ -26,11 +29,20 @@
   border: 1px solid #525557;
   padding-top: 25px;
   padding-left: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
 }
 .aboutHeading h2 {
   font-size: 64px;
   color: #fe3b1f;
   margin: 43px 43px 127px 140px;
+  padding-top: 43px;
+  padding-bottom: 43px;
+  font-family: Rowdies;
+  font-style: normal;
+  font-weight: normal;
+  text-align: start;
 }
 .aboutInput {
   width: 645px;
@@ -41,6 +53,9 @@
   font-size: 18px;
   line-height: 22px;
   color: #000000;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
 }
 .aboutTextArea {
   margin: 45px 115px 33px 153px;
@@ -49,6 +64,9 @@
   padding-bottom: 11px;
   font-size: 18px;
   line-height: 22px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
 }
 .aboutRightBoxHeading h2 {
   margin: 43px 109px 100px 198px;
@@ -56,16 +74,25 @@
   font-size: 64px;
   line-height: 79px;
   text-align: start;
+  padding-top: 43px;
+  padding-bottom: 43px;
+  font-family: Rowdies;
+  font-style: normal;
+  font-weight: normal;
 }
 .AboutRightBoxHeading {
-  width: 600px;
+  width: 705px;
   height: 606px;
   margin: 0 104px 187px 198px;
   color: #ffffff;
   text-align: start;
+  padding-right: 20px;
 }
 .AboutRightBoxHeading p {
   font-size: 24px;
   line-height: 48px;
   letter-spacing: 0.05rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
 }

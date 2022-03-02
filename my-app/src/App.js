@@ -15,8 +15,8 @@ function App() {
       {/* <Header /> */}
       {/* <Origin /> */}
       {/* <Skill /> */}
-      <Covid />
-      {/* <About /> */}
+      {/* <Covid /> */}
+      <About />
       {/* <SubmitPage /> */}
       {/* <ThankYou /> */}
     
