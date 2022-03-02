@@ -14,8 +14,11 @@
 .aboutreadberry-heading > h2 {
   color: rgba(254, 59, 31, 1);
   font-size: 64px;
+  margin: 72px 43px 3px 130px;
+  font-family: Rowdies;
+  font-style: normal;
+  font-weight: normal;
   line-height: 79px;
-  margin-top: 72px;
 }
 .AboutTextContent > p {
   font-size: 24px;
@@ -24,11 +27,18 @@
   margin: 180px 126px 234px 176px;
   color: #ffffff;
   text-align: start;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  width: 705px;
 }
 .skillHeading h2 {
   font-size: 64px;
   line-height: 79px;
   color: #fe3b1f;
+  font-family: Rowdies;
+  font-style: normal;
+  font-weight: normal;
 }
 .skillHeading {
   width: 788px;
@@ -43,4 +53,6 @@
   width: 455px;
   height: 54px;
   margin-top: 31px;
+  font-family: Montserrat;
+  font-style: italic;
 }

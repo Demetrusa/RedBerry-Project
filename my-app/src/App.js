@@ -13,8 +13,8 @@ function App() {
   return (
     <div className="App">
       {/* <Header /> */}
-      <Origin />
-      {/* <Skill /> */}
+      {/* <Origin /> */}
+      <Skill />
       {/* <Covid /> */}
       {/* <About /> */}
       {/* <SubmitPage /> */}
