@@ -42,3 +42,27 @@
   padding-bottom: 17px;
   padding-top: 17px;
 }
+.rightCovidBoxText {
+  width: 705px;
+  height: 606px;
+  line-height: 48px;
+  letter-spacing: 5%;
+  margin: 15px 141px 523px 161px;
+}
+.rightCovidBoxText p {
+  color: #ffffff;
+  font-size: 24px;
+  text-align: start;
+  letter-spacing: 0.05em;
+}
+.rightCovidBoxHeading {
+  width: 788px;
+  height: 175px;
+  margin: 61px 66px 15px 153px;
+}
+.rightCovidBoxHeading h2 {
+  color: #fe3b1f;
+  font-size: 64px;
+  line-height: 79.49px;
+  text-align: start;
+}
