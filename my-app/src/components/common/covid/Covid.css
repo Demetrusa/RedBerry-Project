@@ -26,7 +26,11 @@
   font-size: 18px;
   line-height: 22px;
   margin-bottom: 16px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
 }
+
 .covidHeading {
   width: 788px;
   height: 175px;
@@ -36,7 +40,10 @@
   color: #fe3b1f;
   font-size: 64px;
   text-align: center;
-  padding: 61px 74px 65px 51px;
+
+  font-family: Rowdies;
+  font-style: normal;
+  font-weight: normal;
 }
 #home {
   padding-bottom: 17px;
@@ -54,6 +61,9 @@
   font-size: 24px;
   text-align: start;
   letter-spacing: 0.05em;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
 }
 .rightCovidBoxHeading {
   width: 788px;
@@ -65,4 +75,7 @@
   font-size: 64px;
   line-height: 79.49px;
   text-align: start;
+  font-family: Rowdies;
+  font-style: normal;
+  font-weight: normal;
 }

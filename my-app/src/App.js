@@ -14,8 +14,8 @@ function App() {
     <div className="App">
       {/* <Header /> */}
       {/* <Origin /> */}
-      <Skill />
-      {/* <Covid /> */}
+      {/* <Skill /> */}
+      <Covid />
       {/* <About /> */}
       {/* <SubmitPage /> */}
       {/* <ThankYou /> */}
