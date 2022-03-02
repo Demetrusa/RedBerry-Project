@@ -5,6 +5,8 @@ import Covid from './components/common/covid/Covid';
 import Header from './components/common/header/Header';
 import Origin from './components/common/Origin/Origin';
 import Skill from './components/common/skill/Skill';
+import SubmitPage from './components/common/submitPage/SubmitPage';
+import ThankYou from './components/common/submitPage/ThankYou';
 
 
 function App() {
@@ -14,7 +16,9 @@ function App() {
       {/* <Origin /> */}
       {/* <Skill /> */}
       {/* <Covid /> */}
-      <About />
+      {/* <About /> */}
+      {/* <SubmitPage /> */}
+      <ThankYou />
     
     </div>
   );

@@ -1,0 +1,31 @@
+.submitPage {
+  background: radial-gradient(50% 50% at 50% 50%, #0c0d0e 0%, #151718 73.44%);
+}
+.submitButton {
+  padding: 444px 427px;
+}
+
+.Thanks {
+  background: radial-gradient(50% 50% at 50% 50%, #0c0d0e 0%, #151718 73.44%);
+}
+.Thanks h2 {
+  color: #fe3b1f;
+  font-size: 64px;
+  padding: 444px 427px;
+}
+#finalButton {
+  color: #ffffff;
+  width: 395px;
+  height: 79px;
+  background-color: #fe3b1f;
+  border-radius: 50px;
+  border-color: #fe3b1f;
+  margin-bottom: 35px;
+  font-size: 36px;
+}
+#final-a {
+  font-size: 28px;
+  color: #ffffff;
+  line-height: 34px;
+  text-decoration: underline;
+}
