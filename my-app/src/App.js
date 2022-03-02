@@ -12,13 +12,13 @@ import ThankYou from './components/common/submitPage/ThankYou';
 function App() {
   return (
     <div className="App">
-      {/* <Header /> */}
+      <Header />
       {/* <Origin /> */}
       {/* <Skill /> */}
       {/* <Covid /> */}
       {/* <About /> */}
       {/* <SubmitPage /> */}
-      <ThankYou />
+      {/* <ThankYou /> */}
     
     </div>
   );

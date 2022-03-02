@@ -13,6 +13,9 @@
 h1 {
   font-size: 96px;
   color: #fe3b1f;
+  font-family: Rowdies;
+  font-style: normal;
+  font-weight: normal;
 }
 .startButton > button {
   width: 395px;
@@ -24,6 +27,9 @@ h1 {
   line-height: 29.26px;
   margin-top: 175px;
   border-color: #fe3b1f;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
 }
 .submitted-application {
   margin-top: 41px;
@@ -32,6 +38,9 @@ h1 {
   color: #ffffff;
   font-size: 24px;
   text-decoration: underline;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
 }
 .rocketImg {
   width: 409.92px;
