@@ -1,16 +1,21 @@
 import React from "react";
 import "./Header.css";
 import Rocket from "../../../images/rocketman.svg";
-
+import { useNavigate } from 'react-router-dom';
 
 function Header (){
+    const navigate = useNavigate();
+    
+    function handleClick() {
+    navigate("/path");
+  }
      return (
          <div className="homePage">
             <div className="heading">
                 <h1>Welcome Rocketeer !</h1>
             </div>
             <div className="startButton">
-                <button>Start Questionnaire</button>
+               <button type="button" onClick={handleClick}>Start Questionnaire</button>
             </div>
             <div className="submitted-application">
                 <a href="">Submitted Applications</a>

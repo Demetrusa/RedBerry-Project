@@ -56,3 +56,9 @@
   font-family: Montserrat;
   font-style: italic;
 }
+.datapicker {
+  margin-top: 31px;
+}
+.MuiFormControl-root {
+  width: 455px;
+}

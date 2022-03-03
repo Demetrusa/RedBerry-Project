@@ -1,5 +1,5 @@
 import React from "react";
-// import BasicDatePicker from "./BasicDatePicker";
+import BasicDatePicker from "./BasicDatePicker";
 import "./Covid.css";
 
 
@@ -28,7 +28,7 @@ function Covid() {
                     </div>
                     <div className="radioBox" id="box3">
                         <h2>When?</h2>
-                        {/* <BasicDatePicker /> */}
+                        <BasicDatePicker />
                     </div>
                     <div className="radioBox" id="box4">
                         <h2>Have you been vaccinated?</h2>
@@ -37,7 +37,7 @@ function Covid() {
                     </div>
                     <div className="radioBox" id="box5">
                         <h2>When did you get your last covid vaccine?</h2>
-                        {/* <BasicDatePicker /> */}
+                        <BasicDatePicker />
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@ function Covid() {
                         can either work from home or visit our lovely office
                         on Sairme Street. If it was up to us, we would love you
                         to see us in the office because we think face-to-face 
-                        communications > Zoom meetings. Both on the fun 
+                        communications  Zoom meetings. Both on the fun 
                         and productivity scales. </p>
                 </div>
             </div>

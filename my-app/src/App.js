@@ -1,3 +1,4 @@
+import { Route, Routes } from 'react-router-dom';
 import React from 'react';
 import './App.css';
 import About from './components/common/about/About';
@@ -12,14 +13,14 @@ import ThankYou from './components/common/submitPage/ThankYou';
 function App() {
   return (
     <div className="App">
-      {/* <Header /> */}
-      {/* <Origin /> */}
-      {/* <Skill /> */}
-      {/* <Covid /> */}
-      <About />
-      {/* <SubmitPage /> */}
-      {/* <ThankYou /> */}
     
+        <Header />
+        <Origin />
+        {/* <Skill /> */}
+        {/* <Covid /> */}
+        {/* <About /> */}
+        {/* <SubmitPage /> */}
+        {/* <ThankYou /> */}
     </div>
   );
 }

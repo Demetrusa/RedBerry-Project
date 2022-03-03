@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import BasicDatePicker from "../covid/BasicDatePicker";
 import "./Skill.css";
 
 function Skill () {
@@ -21,7 +22,7 @@ function Skill () {
                 </div>
                 <div className="skillForm">
                 <select name="custom-select" id="skillChange" placeholder="Skills">
-                    <option value={object[1]}>{object[1]}</option>
+                    <option value={object[1]}>{}</option>
                     <option value="CSS"></option>
                     <option value="PHP"></option>
                     <option value="Laravel"></option>
@@ -30,7 +31,8 @@ function Skill () {
                     <option value="Svelte"></option>
                     <option value="Angular"></option>
                 </select><br />
-                <input type="date" id="experianceTime" name="experianceTime" />
+                <div className="datapicker"><BasicDatePicker />
+                </div>
                 </div>
                 
             </div>

@@ -12,6 +12,9 @@
   color: #fe3b1f;
   font-size: 64px;
   padding: 444px 427px;
+  font-family: Rowdies;
+  font-style: normal;
+  font-weight: normal;
 }
 #finalButton {
   color: #ffffff;
@@ -22,10 +25,16 @@
   border-color: #fe3b1f;
   margin-bottom: 35px;
   font-size: 36px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
 }
 #final-a {
   font-size: 28px;
   color: #ffffff;
   line-height: 34px;
   text-decoration: underline;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
 }
