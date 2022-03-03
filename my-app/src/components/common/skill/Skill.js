@@ -1,19 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import BasicDatePicker from "../covid/BasicDatePicker";
 import "./Skill.css";
 
 function Skill () {
-    const [object, setSkill] = useState("");
-    const skill = fetch('https://bootcamp-2022.devtest.ge/api/skills');
-    skill.then(function (response){
-        let responseJSON = response.json();
-        responseJSON.then(function(title){
-            let object = title[1];
-            console.log(object);
-        }).catch(function(){
-            alert("error");
-        });
-    })
+    const [skill, setSkill] = useState([]);
+   
+    useEffect(()=>{
+        fetch('https://bootcamp-2022.devtest.ge/api/skills')
+        .then( (response) => response.json())
+        .then(function(data){
+                setSkill(data)
+            }).catch(function(){
+                alert("error");
+            });
+    },[])
+        console.log(skill)
     return (
         <div className="skill">
             <div className="abouTSkill">
@@ -22,16 +23,15 @@ function Skill () {
                 </div>
                 <div className="skillForm">
                 <select name="custom-select" id="skillChange" placeholder="Skills">
-                    <option value={object[1]}>{}</option>
-                    <option value="CSS"></option>
-                    <option value="PHP"></option>
-                    <option value="Laravel"></option>
-                    <option value="React.JS"></option>
-                    <option value="Vue.JS"></option>
-                    <option value="Svelte"></option>
-                    <option value="Angular"></option>
+                    {skill? skill.map((item, index ) => {
+                        return (
+                            <option key={item.id} value={item.title}>{item.title}</option>
+                        )
+                    }) : null
+                }
                 </select><br />
-                <div className="datapicker"><BasicDatePicker />
+                <div className="datapicker">
+                    <BasicDatePicker />
                 </div>
                 </div>
                 
