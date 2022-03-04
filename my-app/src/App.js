@@ -1,4 +1,3 @@
-import { Route, Routes } from 'react-router-dom';
 import React from 'react';
 import './App.css';
 import About from './components/common/about/About';
@@ -8,15 +7,22 @@ import Origin from './components/common/Origin/Origin';
 import Skill from './components/common/skill/Skill';
 import SubmitPage from './components/common/submitPage/SubmitPage';
 import ThankYou from './components/common/submitPage/ThankYou';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 
 function App() {
   return (
     <div className="App">
-    
-        {/* <Header /> */}
+      <Switch>
+        <Route exact path="/">
+          <Header />
+        </Route>
+        <Route path="/page">
+          <Skill />
+        </Route>
+      </Switch>
+      
         {/* <Origin /> */}
-        <Skill />
         {/* <Covid /> */}
         {/* <About /> */}
         {/* <SubmitPage /> */}

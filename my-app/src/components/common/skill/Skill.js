@@ -25,7 +25,10 @@ function Skill () {
                 <select name="custom-select" id="skillChange" placeholder="Skills">
                     {skill? skill.map((item, index ) => {
                         return (
+                            
                             <option key={item.id} value={item.title}>{item.title}</option>
+                            // optionis magivrad ul li
+                            
                         )
                     }) : null
                 }
@@ -50,6 +53,7 @@ function Skill () {
                     </p>
                 </div>
             </div>
+
         </div>
     )
 }
