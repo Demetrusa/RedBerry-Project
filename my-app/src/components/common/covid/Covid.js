@@ -5,6 +5,7 @@ import { useHistory } from 'react-router-dom';
 
 
 import "./Covid.css";
+import BasicDatePicker from "../dataPicker/BasicDatePicker";
 
 
 function Covid() {
@@ -32,7 +33,7 @@ function Covid() {
                     </div>
                     <div className="radioBox" id="box3">
                         <h2>When?</h2>
-                        <Example />
+                        <BasicDatePicker />
                     </div>
                     <div className="radioBox" id="box4">
                         <h2>Have you been vaccinated?</h2>
@@ -41,7 +42,7 @@ function Covid() {
                     </div>
                     <div className="radioBox" id="box5">
                         <h2>When did you get your last covid vaccine?</h2>
-                        <Example />
+                        <BasicDatePicker />
                     </div>
                     <div className="skillbutton">
                          <button type="button" onClick={handleClick}>Next</button>   
