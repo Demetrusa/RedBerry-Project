@@ -1,13 +1,17 @@
 import React from "react";
 import { Example } from "./Example";
 import "./Covid.css";
+import { useHistory } from 'react-router-dom';
 
 
 import "./Covid.css";
 
 
 function Covid() {
-
+    const history = useHistory();
+    const handleClick = () => {
+        history.push("/about")
+    }
     return (
         <div className="covid-box">
             <div className="leftCovidBox">
@@ -38,6 +42,9 @@ function Covid() {
                     <div className="radioBox" id="box5">
                         <h2>When did you get your last covid vaccine?</h2>
                         <Example />
+                    </div>
+                    <div className="skillbutton">
+                         <button type="button" onClick={handleClick}>Next</button>   
                     </div>
                 </div>
             </div>

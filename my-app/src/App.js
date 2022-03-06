@@ -23,12 +23,19 @@ function App() {
         <Route path="/page">
           <Skill />
         </Route>
+        <Route path="/covid">
+          <Covid />
+        </Route>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="ThankYou">
+          <SubmitPage/>
+        </Route>
       </Switch>
 
-    
-        {/* <Covid /> */}
-        {/* <About /> */}
-        {/* <SubmitPage /> */}
+       
+        
         {/* <ThankYou /> */}
     </div>
   );

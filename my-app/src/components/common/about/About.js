@@ -1,7 +1,13 @@
 import React from "react";
 import "./About.css";
+import { useHistory } from 'react-router-dom';
+
 
 function About () {
+    const history = useHistory();
+    const handleClick = () => {
+        history.push("/Submit")
+    }
     return (
         <div className="about">
             <div className="aboutLeftBox">
@@ -16,12 +22,15 @@ function About () {
                     </div>
                     <div className="aboutTextArea">
                         <h2>What would you speak about at Devtalk?</h2>
-                        <textarea name="Devlak" id="devlak" cols="" rows="" value="I would..."></textarea>
+                        <textarea name="Devlak" id="devlak" cols="" rows="" placeholder="I Would"></textarea>
                     </div>
                     <div className="aboutTextArea">
                         <h2>Tell us something special</h2>
-                        <textarea name="Special" id="Special" cols="" rows="" value="I..."></textarea>
+                        <textarea name="Special" id="Special" cols="" rows="" placeholder="I..."></textarea>
                     </div>
+                </div>
+                <div className="skillbutton">
+                         <button type="button" onClick={handleClick}>Next</button>   
                 </div>
             </div>
             <div className="aboutRightBox">

@@ -1,9 +1,16 @@
 import React, { useState } from "react";
 import "./Origin.css"
+import { useHistory } from 'react-router-dom';
 
 function Origin () {
     const [value, setValue] = useState('');
     console.log(value);
+
+    const history = useHistory();
+
+    const handleClick = () => {
+        history.push("/page")
+    }
     return(
         <div className="OriginPage">
             <div className="leftSide">
@@ -18,6 +25,9 @@ function Origin () {
                         setValue(e.target.value.slice(5,e.target.value.length))
                     }} /> 
                 </div>
+             <div className="skillbutton">
+                <button type="button" onClick={handleClick}>Next</button>   
+             </div>
             </div>
             <div className="rightSide">
                 <div className="originHeadingTwo">

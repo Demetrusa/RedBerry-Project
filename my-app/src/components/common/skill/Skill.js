@@ -1,11 +1,18 @@
 import React, { useEffect, useState } from "react";
 import "./Skill.css";
+import { useHistory } from 'react-router-dom';
 
 function Skill () {
     const [skill, setSkill] = useState([]);
     const [selected, setSelected] = useState('');
     const [date,setDate] = useState();
     const [click, setClick] = useState(false);
+
+    const history = useHistory();
+
+    const handleClick = () => {
+        history.push("/covid")
+    }
 
     useEffect(()=>{
         fetch('https://bootcamp-2022.devtest.ge/api/skills')
@@ -59,6 +66,9 @@ function Skill () {
                         <p>-</p>
                     </div>
                 }
+                <div className="skillbutton">
+                <button type="button" onClick={handleClick}>Next</button>   
+             </div>
             </div>
             <div className="AboutRedberry">
                 <div className="aboutreadberry-heading">
