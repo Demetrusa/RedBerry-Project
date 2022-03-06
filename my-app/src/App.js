@@ -29,8 +29,14 @@ function App() {
         <Route path="/about">
           <About />
         </Route>
-        <Route path="ThankYou">
+        <Route path="/submit">
           <SubmitPage/>
+        </Route>
+        <Route path="/thankYou">
+          <ThankYou/>
+        </Route>
+        <Route path="/submit">
+          <ThankYou />
         </Route>
       </Switch>
 

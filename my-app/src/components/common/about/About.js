@@ -6,7 +6,7 @@ import { useHistory } from 'react-router-dom';
 function About () {
     const history = useHistory();
     const handleClick = () => {
-        history.push("/Submit")
+        history.push("/submit")
     }
     return (
         <div className="about">
