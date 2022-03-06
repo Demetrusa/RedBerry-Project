@@ -79,3 +79,15 @@
   font-style: normal;
   font-weight: normal;
 }
+#office {
+  margin-bottom: 17px;
+}
+#home {
+  margin-bottom: 17px;
+}
+#covidYes {
+  margin-bottom: 17px;
+}
+#vaccinaNo {
+  margin-top: 17px;
+}

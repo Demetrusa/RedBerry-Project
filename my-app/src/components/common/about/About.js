@@ -17,8 +17,8 @@ function About () {
                 <div className="aboutHeadingInputs">
                     <div className="aboutInput">
                         <h2>Would you attend Devtalks and maybe also organize your own?</h2>
-                        <input type="radio"  id="aboutdYes" name="Yes" value="Yes"/>Yes<br/>
-                        <input type="radio"  id="aboutNo" name="No" value="No"/>No<br/>
+                        <input type="radio"  id="aboutdYes" name="Yes" value="Yes"/><lavel For="Yes">Yes</lavel><br/>
+                        <input type="radio"  id="aboutNo" name="No" value="No"/><label for="No">No</label><br/>
                     </div>
                     <div className="aboutTextArea">
                         <h2>What would you speak about at Devtalk?</h2>
