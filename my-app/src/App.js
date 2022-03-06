@@ -17,12 +17,15 @@ function App() {
         <Route exact path="/">
           <Header />
         </Route>
+        <Route path="/origin">
+        <Origin />
+          </Route>
         <Route path="/page">
           <Skill />
         </Route>
       </Switch>
-      
-        {/* <Origin /> */}
+
+    
         {/* <Covid /> */}
         {/* <About /> */}
         {/* <SubmitPage /> */}

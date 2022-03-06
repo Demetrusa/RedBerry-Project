@@ -1,5 +1,5 @@
 import React from "react";
-import BasicDatePicker from "./BasicDatePicker";
+import { Example } from "./Example";
 import "./Covid.css";
 
 
@@ -28,7 +28,7 @@ function Covid() {
                     </div>
                     <div className="radioBox" id="box3">
                         <h2>When?</h2>
-                        <BasicDatePicker />
+                        <Example />
                     </div>
                     <div className="radioBox" id="box4">
                         <h2>Have you been vaccinated?</h2>
@@ -37,7 +37,7 @@ function Covid() {
                     </div>
                     <div className="radioBox" id="box5">
                         <h2>When did you get your last covid vaccine?</h2>
-                        <BasicDatePicker />
+                        <Example />
                     </div>
                 </div>
             </div>

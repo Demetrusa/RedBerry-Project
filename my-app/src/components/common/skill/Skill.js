@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
-import BasicDatePicker from "../covid/BasicDatePicker";
 import "./Skill.css";
 
 function Skill () {
     const [skill, setSkill] = useState([]);
-   
+    const [selected, setSelected] = useState('');
+    const [date,setDate] = useState();
+    const [click, setClick] = useState(false);
+
     useEffect(()=>{
         fetch('https://bootcamp-2022.devtest.ge/api/skills')
         .then( (response) => response.json())
@@ -14,7 +16,16 @@ function Skill () {
                 alert("error");
             });
     },[])
-        console.log(skill)
+
+    const addSkill = (e) => { 
+      const selectedSkill = e.target.value;
+      setSelected(selectedSkill);
+    }
+
+    const addDate = (e) => {
+        const addedDate = e;
+        setDate(addedDate)
+    }
     return (
         <div className="skill">
             <div className="abouTSkill">
@@ -22,22 +33,32 @@ function Skill () {
                     <h2>Tell us about your skills</h2>
                 </div>
                 <div className="skillForm">
-                <select name="custom-select" id="skillChange" placeholder="Skills">
+                <select name="custom-select" id="skillChange" placeholder="Skills" onChange={addSkill}>
                     {skill? skill.map((item, index ) => {
                         return (
-                            
-                            <option key={item.id} value={item.title}>{item.title}</option>
-                            // optionis magivrad ul li
-                            
+                            <option key={item.id} value={item.title}>{item.title}</option>    
                         )
                     }) : null
                 }
                 </select><br />
-                <div className="datapicker">
-                    <BasicDatePicker />
+                    <div className="datapicker">
+                        <input type='date' onChange={addDate} style={{ width: 455,height: 54,alignItems: "center"}}/>
+                    </div>
                 </div>
+                <div className="add-button">
+                    <button onClick={() => {
+                        setClick(true);
+                        addDate();
+                        addSkill();
+                    }}>Add Programing Language</button>
                 </div>
-                
+                {click && 
+                    <div className="saved-programs">
+                        <p>{selected}</p>
+                        <p>{date}</p>
+                        <p>-</p>
+                    </div>
+                }
             </div>
             <div className="AboutRedberry">
                 <div className="aboutreadberry-heading">
@@ -53,7 +74,6 @@ function Skill () {
                     </p>
                 </div>
             </div>
-
         </div>
     )
 }

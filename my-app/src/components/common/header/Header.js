@@ -11,7 +11,7 @@ function Header (){
     const history = useHistory();
 
     const handleClick = () => {
-        history.push("/page")
+        history.push("/origin")
     }
      return (
          <div className="homePage">
