@@ -9,7 +9,7 @@ function SubmitPage () {
     }
 
     const backClick = ()=> {
-        history.push("/submit")
+        history.push("/about")
     }
     return(
         <div className="submitPage">

@@ -39,10 +39,6 @@ function App() {
           <ThankYou />
         </Route>
       </Switch>
-
-       
-        
-        {/* <ThankYou /> */}
     </div>
   );
 }
