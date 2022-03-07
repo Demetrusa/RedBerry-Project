@@ -39,7 +39,7 @@ function About () {
                 </div> */}
                 <div className="paginattion">
                     <img src={FirstArrow} alt="firstArrow"  onClick={backClick}/>
-                    <div className="eclipse"></div>
+                    <div className="eclipse" id="first1"></div>
                     <div className="eclipse"></div>
                     <div className="eclipse"></div>
                     <div className="eclipse"></div>
