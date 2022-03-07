@@ -2,6 +2,8 @@ import React from "react";
 import { Example } from "./Example";
 import "./Covid.css";
 import { useHistory } from 'react-router-dom';
+import FirstArrow  from "../../../images/Previous.svg"
+import SirstArrow  from "../../../images/Next.svg"
 
 
 import "./Covid.css";
@@ -12,6 +14,9 @@ function Covid() {
     const history = useHistory();
     const handleClick = () => {
         history.push("/about")
+    }
+    const backClick = ()=> {
+        history.push("/page")
     }
     return (
         <div className="covid-box">
@@ -50,9 +55,18 @@ function Covid() {
                         <h2>When did you get your last covid vaccine?</h2>
                         <BasicDatePicker />
                     </div>
-                    <div className="skillbutton">
+                    {/* <div className="skillbutton">
                          <button type="button" onClick={handleClick}>Next</button>   
-                    </div>
+                    </div> */}
+                <div className="paginattion">
+                    <img src={FirstArrow} alt="firstArrow"  onClick={backClick}/>
+                    <div className="eclipse"></div>
+                    <div className="eclipse"></div>
+                    <div className="eclipse"></div>
+                    <div className="eclipse"></div>
+                    <div className="eclipse"></div>
+                    <img src={SirstArrow} alt="SecondArrow"  id="SecondArrow" onClick={handleClick}/>
+                </div>
                 </div>
             </div>
             <div className="rightCovidBox">

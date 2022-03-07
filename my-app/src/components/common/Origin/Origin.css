@@ -71,3 +71,19 @@
   margin-left: 255px;
   margin-bottom: 56px;
 }
+.eclipse {
+  width: 19px;
+  height: 19px;
+  background: #fe3b1f;
+  border-radius: 50%;
+  margin-left: 19px;
+  opacity: 0.2;
+}
+.paginattion {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+#SecondArrow {
+  margin-left: 19px;
+}

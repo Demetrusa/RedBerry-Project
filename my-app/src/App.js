@@ -38,9 +38,14 @@ function App() {
         <Route path="/submit">
           <ThankYou />
         </Route>
+        <Route path="/Header">
+          <Origin />
+        </Route>
+        <Route path="/Skill">
+          <Covid />
+        </Route>
       </Switch>
     </div>
   );
 }
-
 export default App;
