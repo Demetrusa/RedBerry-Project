@@ -1,12 +1,17 @@
 import React from "react";
 import "./About.css";
 import { useHistory } from 'react-router-dom';
+import FirstArrow  from "../../../images/Previous.svg"
+import SirstArrow  from "../../../images/Next.svg"
 
 
 function About () {
     const history = useHistory();
     const handleClick = () => {
         history.push("/submit")
+    }
+    const backClick = ()=> {
+        history.push("/covid")
     }
     return (
         <div className="about">
@@ -29,8 +34,17 @@ function About () {
                         <textarea name="Special" id="Special" cols="" rows="" placeholder="I..."></textarea>
                     </div>
                 </div>
-                <div className="skillbutton">
+                {/* <div className="skillbutton">
                          <button type="button" onClick={handleClick}>Next</button>   
+                </div> */}
+                <div className="paginattion">
+                    <img src={FirstArrow} alt="firstArrow"  onClick={backClick}/>
+                    <div className="eclipse"></div>
+                    <div className="eclipse"></div>
+                    <div className="eclipse"></div>
+                    <div className="eclipse"></div>
+                    <div className="eclipse"></div>
+                    <img src={SirstArrow} alt="SecondArrow"  id="SecondArrow" onClick={handleClick}/>
                 </div>
             </div>
             <div className="aboutRightBox">
