@@ -39,7 +39,7 @@ function Origin () {
                     <h2>Hey, Rocketeer, what are your coordinates?</h2>
                 </div>
                 <div className="firstForm">
-                    <input type="text" name="firstName" id="firstName" placeholder="First Name" minLength={2} required/><br />
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name" minLength={2}  required /><br />
                     <input type="text" name="lastName" id="lastName" placeholder="Last Name"  minLength={2} required/><br />
                     <input type="email" name="email" id="email" placeholder="E mail"  required /><br /> 
                     <input type="tel"  name="phone" id="phone" placeholder="+995 5_ _ _ _"  value={`+995 ${value}`} onChange={(e)=>{ 
