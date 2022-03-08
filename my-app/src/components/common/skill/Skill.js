@@ -48,7 +48,10 @@ function Skill () {
         history.push("/covid")
     }
     const aboutPage = () =>{
-        history.push("about")
+        history.push("/about")
+    }
+    const submitPg =() => {
+        history.push("/submit")
     }
     return (
         <div className="skill">
@@ -90,7 +93,7 @@ function Skill () {
                     <div className="eclipse" id="first1" onClick={skillPage}></div>
                     <div className="eclipse" onClick={covidPage}></div>
                     <div className="eclipse" onClick={aboutPage}></div>
-                    <div className="eclipse"></div>
+                    <div className="eclipse" onClick={submitPg}></div>
                     <img src={SirstArrow} alt="SecondArrow"  id="SecondArrow" onClick={handleClick}/>
                 </div>
             </div>

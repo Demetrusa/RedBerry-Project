@@ -25,6 +25,9 @@ function About () {
     const aboutPage = () =>{
         history.push("about")
     }
+    const submitPg =() => {
+        history.push("/submit")
+    }
     return (
         <div className="about">
             <div className="aboutLeftBox">
@@ -52,7 +55,7 @@ function About () {
                     <div className="eclipse" onClick={skillPage}></div>
                     <div className="eclipse" onClick={covidPage}></div>
                     <div className="eclipse"id="first1" onClick={aboutPage}></div>
-                    <div className="eclipse"></div>
+                    <div className="eclipse" onClick={submitPg}></div>
                     <img src={SirstArrow} alt="SecondArrow"  id="SecondArrow" onClick={handleClick}/>
                 </div>
             </div>

@@ -44,6 +44,9 @@ function App() {
         <Route path="/Skill">
           <Covid />
         </Route>
+        <Route path="/submit">
+          <Covid />
+        </Route>
       </Switch>
     </div>
   );
