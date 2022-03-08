@@ -13,6 +13,18 @@ function About () {
     const backClick = ()=> {
         history.push("/covid")
     }
+    const originPage = () => {
+        history.push("/origin")
+    }
+    const skillPage = () => {
+        history.push("/page")
+    }
+    const covidPage = () => {
+        history.push("/covid")
+    }
+    const aboutPage = () =>{
+        history.push("about")
+    }
     return (
         <div className="about">
             <div className="aboutLeftBox">
@@ -34,15 +46,12 @@ function About () {
                         <textarea name="Special" id="Special" cols="" rows="" placeholder="I..."></textarea>
                     </div>
                 </div>
-                {/* <div className="skillbutton">
-                         <button type="button" onClick={handleClick}>Next</button>   
-                </div> */}
                 <div className="paginattion">
                     <img src={FirstArrow} alt="firstArrow"  onClick={backClick}/>
-                    <div className="eclipse" id="first1"></div>
-                    <div className="eclipse"></div>
-                    <div className="eclipse"></div>
-                    <div className="eclipse"></div>
+                    <div className="eclipse" onClick={originPage}></div>
+                    <div className="eclipse" onClick={skillPage}></div>
+                    <div className="eclipse" onClick={covidPage}></div>
+                    <div className="eclipse"id="first1" onClick={aboutPage}></div>
                     <div className="eclipse"></div>
                     <img src={SirstArrow} alt="SecondArrow"  id="SecondArrow" onClick={handleClick}/>
                 </div>

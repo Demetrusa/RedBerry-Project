@@ -17,6 +17,18 @@ function Origin () {
     const backClick = ()=> {
         history.push("/")
     }
+    const originPage = () => {
+        history.push("/origin")
+    }
+    const skillPage = () => {
+        history.push("/page")
+    }
+    const covidPage = () => {
+        history.push("/covid")
+    }
+    const aboutPage = () =>{
+        history.push("about")
+    }
     return(
         <div className="OriginPage">
             <div className="leftSide">
@@ -31,15 +43,12 @@ function Origin () {
                         setValue(e.target.value.slice(5,e.target.value.length))
                     }} /> 
                 </div>
-             {/* <div className="skillbutton">
-                <button type="button" onClick={handleClick}>Next</button>   
-             </div> */}
                 <div className="paginattion">
                     <img src={FirstArrow} alt="firstArrow"  onClick={backClick}/>
-                    <div className="eclipse" ></div>
-                    <div className="eclipse"></div>
-                    <div className="eclipse"></div>
-                    <div className="eclipse"></div>
+                    <div className="eclipse" id="first1" onClick={originPage}></div>
+                    <div className="eclipse" onClick={skillPage}></div>
+                    <div className="eclipse" onClick={covidPage}></div>
+                    <div className="eclipse" onClick={aboutPage}></div>
                     <div className="eclipse"></div>
                     <img src={SirstArrow} alt="SecondArrow"  id="SecondArrow" onClick={handleClick}/>
                 </div>

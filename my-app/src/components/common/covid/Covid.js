@@ -18,6 +18,19 @@ function Covid() {
     const backClick = ()=> {
         history.push("/page")
     }
+    const originPage = () => {
+        history.push("/origin")
+    }
+    const skillPage = () => {
+        history.push("/page")
+    }
+    const covidPage = () => {
+        history.push("/covid")
+    }
+    const aboutPage = () =>{
+        history.push("about")
+    }
+   
     return (
         <div className="covid-box">
             <div className="leftCovidBox">
@@ -55,15 +68,13 @@ function Covid() {
                         <h2>When did you get your last covid vaccine?</h2>
                         <BasicDatePicker />
                     </div>
-                    {/* <div className="skillbutton">
-                         <button type="button" onClick={handleClick}>Next</button>   
-                    </div> */}
+
                 <div className="paginattion">
                     <img src={FirstArrow} alt="firstArrow"  onClick={backClick}/>
-                    <div className="eclipse"></div>
-                    <div className="eclipse"></div>
-                    <div className="eclipse"></div>
-                    <div className="eclipse"></div>
+                    <div className="eclipse" onClick={originPage}></div>
+                    <div className="eclipse" onClick={skillPage}></div>
+                    <div className="eclipse" onClick={covidPage} id="first1"></div>
+                    <div className="eclipse" onClick={aboutPage}></div>
                     <div className="eclipse"></div>
                     <img src={SirstArrow} alt="SecondArrow"  id="SecondArrow" onClick={handleClick}/>
                 </div>
