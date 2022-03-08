@@ -20,17 +20,20 @@
   font-weight: normal;
   line-height: 79px;
 }
-.AboutTextContent > p {
+.AboutTextContent p {
   font-size: 24px;
   line-height: 200%;
   letter-spacing: 0.05em;
-  margin: 180px 126px 234px 176px;
   color: #ffffff;
   text-align: start;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  width: 705px;
+  max-width: 705px;
+  width: 100%;
+}
+.AboutTextContent {
+  margin: 180px 126px 234px 176px;
 }
 .skillHeading h2 {
   font-size: 64px;

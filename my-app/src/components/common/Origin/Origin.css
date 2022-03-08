@@ -18,7 +18,7 @@
   font-weight: normal;
 }
 .OriginHeading {
-  width: 716px;
+  max-width: 716px;
   margin: 105px 0 0 131px;
 }
 .originHeadingTwo {
@@ -36,7 +36,8 @@
   font-weight: normal;
 }
 .rightSideText {
-  width: 705px;
+  max-width: 705px;
+  width: 100%;
   margin: 3px 122px 279px 180px;
 }
 .rightSideText p {
