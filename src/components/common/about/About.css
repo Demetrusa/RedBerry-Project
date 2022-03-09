@@ -56,6 +56,7 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
+  padding-bottom: 16px;
 }
 .aboutTextArea {
   margin: 45px 115px 33px 153px;
@@ -153,7 +154,7 @@
     width: 300px;
     margin-top: 20px;
   }
-  #aboutdYes {
+  #aboutYes {
     margin-top: 20px;
   }
   .aboutRightBoxText {
