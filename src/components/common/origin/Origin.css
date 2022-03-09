@@ -98,7 +98,6 @@
     margin: 0 auto;
   }
   .rightSideText p {
-    font-size: 18px;
     padding-left: 10px;
   }
   .originHeadingTwo {
@@ -111,5 +110,9 @@
   }
   .OriginHeading h2 {
     font-size: 48px;
+  }
+  .OriginHeading {
+    margin: 0 auto;
+    padding-top: 71px;
   }
 }

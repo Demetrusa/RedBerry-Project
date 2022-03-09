@@ -96,6 +96,9 @@
     margin: 0 auto;
     max-width: 600px;
   }
+  .rightCovidBox p {
+    line-height: 200%;
+  }
   .rightCovidBoxText {
     max-width: 600px;
   }

@@ -93,8 +93,19 @@
   }
   .skillHeading h2 {
     font-size: 48px;
+    max-width: 500px;
   }
   .aboutreadberry-heading h2 {
     font-size: 48px;
+    margin: 0 auto;
+    padding-top: 72px;
+  }
+  .saved-programs {
+    margin: 0 auto;
+  }
+  .AboutTextContent {
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 61px;
   }
 }

@@ -111,11 +111,19 @@
   }
   .aboutRightBoxText p {
     align-items: center;
-    line-height: 30px;
+    line-height: 35px;
     padding-top: 69px;
+    padding-left: 20px;
+    width: 600px;
   }
   .aboutHeading h2 {
     font-size: 48px;
+  }
+  .aboutInput,
+  .aboutTextArea,
+  .aboutTextArea {
+    margin: 0 auto;
+    padding-left: 30px;
   }
 }
 @media (max-width: 1250px) {
