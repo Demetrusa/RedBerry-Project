@@ -1,5 +1,4 @@
 import React from "react";
-import { Example } from "./Example";
 import "./Covid.css";
 import { useHistory } from 'react-router-dom';
 import FirstArrow  from "../../../images/Previous.svg"

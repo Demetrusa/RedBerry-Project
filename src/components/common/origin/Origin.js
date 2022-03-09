@@ -9,6 +9,9 @@ import * as Yup from 'yup';
 
 function Origin () {
     const [value, setValue] = useState('');
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [mail, setMail] = useState('');
     console.log(value);
 
     const history = useHistory();
@@ -37,16 +40,43 @@ function Origin () {
      const SignupSchema = Yup.object().shape({
         firstName: Yup.string()
           .min(2, 'Too Short!')
-          .max(50, 'Too Long!')
+          .max(30, 'Too Long!')
           .required('Required'),
         lastName: Yup.string()
           .min(2, 'Too Short!')
-          .max(50, 'Too Long!')
+          .max(30, 'Too Long!')
           .required('Required'),
         email: Yup.string().email('Invalid email').required('Required'),
         tel: Yup.string()
             .required('+995')
       });
+      console.log(SignupSchema, "scema")
+
+
+      //ინტერნად უნდა ამიყვანოთ თუ ტექ-ლიდად? ;დ
+
+
+      const appData = {
+        first_name: firstName,
+        last_name: lastName,
+        email: mail,
+        token: "89nOpas|asdanjjh^&as"
+      }
+      const onClick = () => {
+        fetch('https://bootcamp-2022.devtest.ge/api/application', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(appData)
+        })
+        .then( (response) => console.log(response))
+        .then(function(data){
+              console.log(data)
+            }).catch((error) => {
+                console.log(error)
+            });
+      }
     
     return(
         <div className="OriginPage">
@@ -69,16 +99,22 @@ function Origin () {
                     >
                     {({ errors, touched }) => (
                         <Form>
-                        <Field name="firstName"  placeholder="First Name" />
+                        <Field name="firstName"  placeholder="First Name" value={firstName} onChange={(e) => {
+                            setFirstName(e.target.value)
+                        }} />
                         {errors.firstName && touched.firstName ? (
-                            <div>{errors.firstName}</div>
+                            <div style={{color: 'red'}}>{errors.firstName}</div>
                         ) : null}<br />
-                        <Field name="lastName"  placeholder="Last Name"/>
+                        <Field name="lastName"  placeholder="Last Name" value={lastName} onChange={(e) => {
+                            setLastName(e.target.value)
+                        }}/>
                         {errors.lastName && touched.lastName ? (
                             <div>{errors.lastName}</div>
                         ) : null}<br />
                         
-                        <Field name="email" type="email"  placeholder="E mail"/><br />
+                        <Field name="email" type="email" value={mail}  placeholder="E mail" onChange={(e) => {
+                            setMail(e.target.value)
+                        }}/><br />
                         {errors.email && touched.email ? <div>{errors.email}</div> : null}
 
                         <Field name="tel" type="tel" value={`+995 ${value}`} onChange={(e)=>{ 
@@ -88,7 +124,7 @@ function Origin () {
                         {errors.tel && touched.tel ? (
                             <div>{errors.tel}</div>
                         ) : null}<br />
-                        <button type="submit">Submit</button>
+                        <button type="submit" onClick={onClick}>Submit</button>
                         </Form>
                     )}
                  </Formik>
