@@ -55,23 +55,14 @@
 .firstForm {
   margin-top: 131px;
 }
-.firstForm > input {
-  width: 455px;
+.firstForm input {
+  width: 450px;
   height: 54px;
-  padding: 17px 203px 13px 57px;
-  margin-bottom: 37px;
   font-family: Montserrat;
   font-style: italic;
+  padding: 30px;
 }
-.skillbutton button {
-  width: 201px;
-  height: 32px;
-  background-color: #fe3b1f;
-  color: #ffffff;
-  margin-top: 22px;
-  margin-left: 255px;
-  margin-bottom: 56px;
-}
+
 .eclipse {
   width: 19px;
   height: 19px;

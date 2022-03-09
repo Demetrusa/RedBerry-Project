@@ -3,6 +3,8 @@ import "./Origin.css"
 import { useHistory } from 'react-router-dom';
 import FirstArrow  from "../../../images/Previous.svg"
 import SirstArrow  from "../../../images/Next.svg"
+import { Formik, Form, Field } from 'formik';
+import * as Yup from 'yup';
 
 
 function Origin () {
@@ -32,6 +34,20 @@ function Origin () {
     const submitPg =() => {
         history.push("submit")
     }
+     const SignupSchema = Yup.object().shape({
+        firstName: Yup.string()
+          .min(2, 'Too Short!')
+          .max(50, 'Too Long!')
+          .required('Required'),
+        lastName: Yup.string()
+          .min(2, 'Too Short!')
+          .max(50, 'Too Long!')
+          .required('Required'),
+        email: Yup.string().email('Invalid email').required('Required'),
+        tel: Yup.string()
+            .required('+995')
+      });
+    
     return(
         <div className="OriginPage">
             <div className="leftSide">
@@ -39,12 +55,43 @@ function Origin () {
                     <h2>Hey, Rocketeer, what are your coordinates?</h2>
                 </div>
                 <div className="firstForm">
-                    <input type="text" name="firstName" id="firstName" placeholder="First Name" minLength={2}  required /><br />
-                    <input type="text" name="lastName" id="lastName" placeholder="Last Name"  minLength={2} required/><br />
-                    <input type="email" name="email" id="email" placeholder="E mail"  required /><br /> 
-                    <input type="tel"  name="phone" id="phone" placeholder="+995 5_ _ _ _"  value={`+995 ${value}`} onChange={(e)=>{ 
+                <Formik
+                    initialValues={{
+                        firstName: '',
+                        lastName: '',
+                        email: '',
+                        tel: '',
+                    }}
+                    validationSchema={SignupSchema}
+                    onSubmit={values => {
+                        console.log(values);
+                    }}
+                    >
+                    {({ errors, touched }) => (
+                        <Form>
+                        <Field name="firstName"  placeholder="First Name" />
+                        {errors.firstName && touched.firstName ? (
+                            <div>{errors.firstName}</div>
+                        ) : null}<br />
+                        <Field name="lastName"  placeholder="Last Name"/>
+                        {errors.lastName && touched.lastName ? (
+                            <div>{errors.lastName}</div>
+                        ) : null}<br />
+                        
+                        <Field name="email" type="email"  placeholder="E mail"/><br />
+                        {errors.email && touched.email ? <div>{errors.email}</div> : null}
+
+                        <Field name="tel" type="tel" value={`+995 ${value}`} onChange={(e)=>{ 
                         setValue(e.target.value.slice(5,e.target.value.length))
-                    }} /> 
+                        }} /><br />
+
+                        {errors.tel && touched.tel ? (
+                            <div>{errors.tel}</div>
+                        ) : null}<br />
+                        <button type="submit">Submit</button>
+                        </Form>
+                    )}
+                 </Formik>
                 </div>
                 <div className="paginattion">
                     <img src={FirstArrow} alt="firstArrow"  onClick={backClick}/>
