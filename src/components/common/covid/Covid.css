@@ -51,9 +51,8 @@
 }
 .rightCovidBoxText {
   width: 705px;
-  height: 606px;
   line-height: 48px;
-  letter-spacing: 5%;
+  letter-spacing: 0.05;
   margin: 15px 141px 523px 161px;
 }
 .rightCovidBoxText p {
@@ -90,4 +89,42 @@
 }
 #vaccinaNo {
   margin-top: 17px;
+}
+
+@media (max-width: 1600px) {
+  .rightCovidBoxText {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  .rightCovidBoxText {
+    max-width: 600px;
+  }
+  .rightCovidBoxHeading {
+    margin: 0 auto;
+    margin-top: 61px;
+    line-height: 30px;
+    width: 600px;
+  }
+  .rightCovidBoxHeading h2 {
+    font-size: 48px;
+    text-align: center;
+  }
+  .covidHeading h2 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 1250px) {
+  .covidHeading {
+    width: 500px;
+  }
+  .CovidRadio {
+    margin: 0 auto;
+    padding-left: 40px;
+  }
+  .rightCovidBoxHeading {
+    width: 500px;
+  }
+  .rightCovidBoxText {
+    width: 500px;
+  }
 }

@@ -63,7 +63,7 @@ function About () {
                 <div className="aboutRightBoxHeading">
                     <h2>Redberrian Insights</h2>
                 </div>
-                <div className="AboutRightBoxHeading">
+                <div className="aboutRightBoxText">
                     <p>We were soo much fun before the pandemic started! Parties almost every 
                         weekend and lavish employee birthday celebrations! Unfortunately, 
                         covid ruined that fun like it did almost everything else in the world. 

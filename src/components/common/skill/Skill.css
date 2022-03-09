@@ -86,3 +86,15 @@
   margin-left: 255px;
   margin-bottom: 56px;
 }
+
+@media (max-width: 1600px) {
+  .skillHeading {
+    max-width: 600px;
+  }
+  .skillHeading h2 {
+    font-size: 48px;
+  }
+  .aboutreadberry-heading h2 {
+    font-size: 48px;
+  }
+}

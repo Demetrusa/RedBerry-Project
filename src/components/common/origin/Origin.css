@@ -92,3 +92,24 @@
 #first1 {
   opacity: 1;
 }
+
+@media (max-width: 1600px) {
+  .rightSideText {
+    margin: 0 auto;
+  }
+  .rightSideText p {
+    font-size: 18px;
+    padding-left: 10px;
+  }
+  .originHeadingTwo {
+    margin: 0 auto;
+  }
+  .originHeadingTwo h2 {
+    margin-top: 97px;
+    font-size: 48px;
+    text-align: center;
+  }
+  .OriginHeading h2 {
+    font-size: 48px;
+  }
+}

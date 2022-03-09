@@ -80,7 +80,7 @@
   font-style: normal;
   font-weight: normal;
 }
-.AboutRightBoxHeading {
+.aboutRightBoxText {
   width: 705px;
   height: 606px;
   margin: 0 104px 187px 198px;
@@ -88,7 +88,7 @@
   text-align: start;
   padding-right: 20px;
 }
-.AboutRightBoxHeading p {
+.aboutRightBoxText p {
   font-size: 24px;
   line-height: 48px;
   letter-spacing: 0.05rem;
@@ -98,4 +98,57 @@
 }
 #aboutNo {
   margin-top: 17px;
+}
+
+@media (max-width: 1600px) {
+  .aboutRightBoxHeading h2 {
+    font-size: 48px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .aboutRightBoxText {
+    margin: 0 auto;
+  }
+  .aboutRightBoxText p {
+    align-items: center;
+    line-height: 30px;
+    padding-top: 69px;
+  }
+  .aboutHeading h2 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 1250px) {
+  .aboutreadberry-heading {
+    max-width: 500px;
+  }
+  .AboutTextContent {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .skillHeading {
+    margin: 0 auto;
+    width: 200px;
+  }
+  .aboutHeadingInputs {
+    margin: 0 auto;
+  }
+  .aboutInput,
+  .aboutTextArea,
+  .aboutTextArea {
+    margin: 0 auto;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+  #devlak,
+  #Special {
+    width: 300px;
+    margin-top: 20px;
+  }
+  #aboutdYes {
+    margin-top: 20px;
+  }
+  .aboutRightBoxText {
+    max-width: 300px;
+  }
 }

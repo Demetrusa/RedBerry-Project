@@ -83,7 +83,7 @@ function Skill () {
                     <div className="saved-programs">
                         <p>{selected}</p>
                         <p>{date}</p>
-                        <p>-</p>
+                        <p id="delete" >-</p>
                     </div>
                 }
 
